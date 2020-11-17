@@ -6,3 +6,10 @@ func NilErr(err error) {
 		panic(err)
 	}
 }
+
+// True panics if given arg is not truthy.
+func True(truthy bool) {
+	if !truthy {
+		panic("not true")
+	}
+}
